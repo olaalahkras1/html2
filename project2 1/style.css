@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Poppins";
+    text-align: center;
+    color: #333;
+    padding: 40px 40px;
+
+}
+
+
+.container h1 {
+    font-size: 30px;
+    font-weight: 200;
+    color: #555;
+    margin-bottom: 1px;
+}
+
+.container h2 {
+    font-size: 30px;
+    color: #5a5555;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 14px;
+    color: #A3A5AE;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: -1px 10px 10px 0px #d1d2d7;
+    text-align: left;
+    position: relative;
+    padding-bottom: 60px;
+    width: 350px;
+    height: 220px;
+
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #A3A5AE;
+    margin-bottom: 15px;
+}
+
+.card:nth-of-type(1) {
+    border-top: 4px solid #45D3D3;
+    top: 100px;
+}
+
+.card:nth-of-type(2) {
+    border-top: 4px solid #EA5353;
+
+}
+
+.card:nth-of-type(3) {
+    border-top: 4px solid #549EF2;
+    top: 100px;
+
+}
+
+.card:nth-of-type(4) {
+    border-top: 4px solid #FCAF4A;
+
+}
+
+@media screen and (max-width:768px) {
+    .card {
+
+        width: 450px;
+        height: 220px;
+
+    }
+
+    .card:nth-of-type(1) {
+        top: 0;
+    }
+
+    .card:nth-of-type(3) {
+        top: 0;
+    }
+
+    .container h1 {
+        font-size: 20px;
+        margin-bottom: 9px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container p {
+        font-size: 10px;
+        margin-bottom: 50px;
+    }
+
+
+    .card h3 {
+        font-size: 30px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        font-weight: 200;
+        margin-bottom: 1px;
+    }
+
+    .container h2 {
+        font-size: 30px;
+
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .container p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+}
