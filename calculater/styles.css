@@ -1,0 +1,56 @@
+/* تنسيق الحاوية العامة */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* تنسيق الآلة الحاسبة */
+.calculator {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الشاشة */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    border: none;
+    background-color: #f4f4f4;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* تنسيق الأزرار */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.zero {
+    grid-column: span 2; /* الزر صفر يأخذ عمودين */
+}
