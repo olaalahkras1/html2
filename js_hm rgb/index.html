@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rgb{
+            /* background-color: rgb(red, green, blue); */
+            border: 2.4rem #eee solid ;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="rgb"></div>
+    <script>
+        var red = Math.random();
+        red *= 255;
+        
+        // console.log(Math.random(nn));
+        // console.log(red);
+        // console.log(Math.floor  (red));
+        var green = Math.random();
+        green *= 255;
+        
+        // console.log(Math.random(nn));
+        // console.log(green);
+        // console.log(Math.floor(green));
+        var blue = Math.random();
+        blue *= 255;
+        var alpha= Math.random();
+        // console.log(Math.random(nn));
+        // console.log(blue);
+        // console.log(Math.floor(blue));
+        document.body.style.backgroundColor =`rgb(${red},${green},${blue},${alpha})`;
+        // document.div.style.backgroundColor =`rgb(${red},${green},${blue})`;
+
+        // let RGB = `rgb(${red},${green},${blue})`;
+
+        // console.log(RGB);
+        // console.log(Math.ceil(RGB));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box-color {
+            /* background-color: red; */
+            width: 7rem;
+            padding: 3rem;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="box-color"></div>
+
+    <script>
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        let alpha = Math.random().toFixed(2);
+        let color_1 = `rgba(${r},${g},${b},${alpha})`;
+        console.log(color_1);
+        let rr = Math.floor(Math.random() * 256);
+        let gg = Math.floor(Math.random() * 256);
+        let bb = Math.floor(Math.random() * 256);
+
+        let color_2 = `rgba(${rr},${gg},${bb},${alpha})`;
+        let color = `linear-gradient(to buttom ,${color_1},${color_2})`;
+        // document.querySelector('#box-color').style.background= color;
+        // document.querySelector('#box-color').innerHTML= `background-image:linear-gradient(${color_1},${color_2})`;
+
+
+        // document.style.backgroundColor=color;
+        // console.log(color);
+
+
+
+        /////////////////////////////////////////////////////////////////////
+let test ='olaolaola ola';
+console.log(test.length);
+console.log(test.charAt(4));
+console.log(test.substring(4,8));
+
+if(test.length>13){
+console.log('to many');
+
+}
+else if(test.length==13){
+console.log('equle');
+}
+else{
+console.log('min');
+
+}
+let book =['football', 'mmon','sunand moon','treesand roud']
+console.log(book[3]);
+book.push('start');
+book.unshift('room');
+console.log(book);
+book.pop();
+console.log(book);
+book.shift('');
+console.log(book);
+console.log(book.length);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
